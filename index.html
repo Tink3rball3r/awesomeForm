@@ -5,68 +5,139 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="contact form example">
-    <title>Contact Form Example</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Awesome English Admission Application</title>
 </head>
 
 <body>
 
-    <!-- START HERE -->
 
-    <!-- Style The Contact Form How Ever You Prefer -->
-    <link rel="stylesheet" href="style.css">
 
-    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-        action="https://script.google.com/macros/s/AKfycbyqsfXKnA821WqKBsM85inSdkmrPl9AUObIKKx4HnucWHIMOdKfW3Sff07EQt92F8VL/exec">
+
+
+    <form class="gform" method="POST" data-email="awesomeform1@gmail.com"
+        action="https://script.google.com/macros/s/AKfycbwweYBAdpWWuo4jLPQS3TIR63shWBpP9z7sW6XQgiM0w0qPCePOgfIcd4N5UdiK7SzDbw/exec">
         <!-- change the form action to your script url -->
 
-        <div class="form-elements">
+        <div class="container">
+            <div class="logo"><img src="aweLogo.jpeg" alt=""></div>
+            <h1>Awesome English Application for admission</h1>
+
+
+            <label for="admissionDate">입학일</label>
+            <input type="date" name="admission_date" lang="ko">
+            <label for="phone">전화 번호</label>
+            <input type="tel" name="phone_number">
+
+
+
+            <!-- student Name:     korean       english -->
+            <label for="studentName">학생 이름</label>
+            <input type="text" name="student_name" placeholder="한국 이름">
+            <input type="text" name="english_name" placeholder="영어 이름">
+
+
             <fieldset class="pure-group">
-                <label for="name">Student: </label>
-                <input id="name" name="korean_name" placeholder="한글" />
-                <input id="name" name="english_name" placeholder="영어" />
-                <label for="name">생년월일: </label>
-                <input id="name" name="birth_date" placeholder="년 월 일" />
-                <input id="name" name="gender" placeholder="성별" />
+                <!-- gender      dob -->
+                <label for="gender">성별</label>
+                <input type="text" name="gender" id="">
+                <label for="DOB">생일</label>
+                <input type="text" name="birth_date" id="">
             </fieldset>
 
             <fieldset class="pure-group">
-                <label for="admission date">입학일</label>
-                <input type="date" name="admission_date" lang="ko">
+                <!-- school/grade    english expierecne -->
+                <label for="school_grade">학교/학년</label>
+                <input type="text" name="school_grade" id="">
+                <label for="englishLevel">영어 경험</label>
+                <input type="text" name="english_level" id="">
+            </fieldset>
+
+            <fieldset class="pure-group">
+                <!-- address   email -->
+                <label for="adress">주소</label>
+                <input type="text" name="address" />
+                <label for="email">이메일</label>
+                <input id="email" name="email" type="email" value="" required />
+            </fieldset>
+
+            <fieldset class="pure-group">
+                <!-- parents   gurardian -->
                 <label for="parent">부모의</label>
                 <input type="text" name="parent">
-                <label for="phone">전화 번호</label>
-                <input type="text" name="phone_number">
-                <label for="phone">헉교/학년</label>
-                <input type="text" name="school_grade">
+                <label for="guardian">보호자</label>
+                <input type="text" name="guardian">
             </fieldset>
 
-            <!-- <fieldset class="pure-group">
-                <label for="email"><em>Your</em> Email Address:</label>
-                <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" />
-            </fieldset> -->
+            <fieldset class="pure-group">
+                <!-- food allergies   days per week -->
+                <label for="allergies">알레르기:</label>
+                <input type="text" name="allergies">
+                <label for="days">일주일에 며칠인가요?</label>
+                <input type="text" name="days">
+            </fieldset>
+
+            <fieldset class="pure-group">
+                <label for="schedule">수업 시간표</label>
+                <textarea name="schedule" id="" cols="60" rows="30"></textarea>
+            </fieldset>
+
+
+
+
 
             <!-- <fieldset class="pure-group">
-                <label for="color">Favourite Color: </label>
-                <input id="color" name="color" placeholder="green" />
-            </fieldset>
+            <label for="parent">부모의</label>
+            <input type="text" name="parent">
+
+
+            <label for="phone">헉교/학년</label>
+            <input type="text" name="school_grade">
+        </fieldset>
+
+        <fieldset class="pure-group">
+            <label for="email">이메일 주소:</label>
+            <input id="email" name="email" type="email" value="" required />
+        </fieldset>
+
+        <fieldset class="pure-group">
+            <label for="adress">주소: </label>
+            <input type="text" name="adress" />
+        </fieldset>
+
+        <fieldset class="pure-group">
+            <label for="allergies">알레르기: </label>
+            <textarea name="allergies" id="" cols="10" rows="5"></textarea>
+        </fieldset>
+
+        <fieldset class="pure-group">
+            <label for="English experience">알레르기: </label>
+            <textarea name="allergies" id="" cols="10" rows="5"></textarea>
+        </fieldset> -->
+
+
+
 
             <fieldset class="pure-group honeypot-field">
                 <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be
                     empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
                 <input id="honeypot" type="text" name="honeypot" value="" />
-            </fieldset> -->
+            </fieldset>
 
+
+            <!-- some type of icon for the send button -->
             <button class="button-success pure-button button-xlarge">
                 <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
         </div>
 
-        <!-- Customise the Thankyou Message People See when they submit the form: -->
+        <!-- make the message in korean: -->
         <div class="thankyou_message" style="display:none;">
-            <h2><em>Thanks</em> for contacting us!
-                We will get back to you soon!</h2>
+            <h2>우리를 선택해 주셔서 감사합니다. 멋진 하루 보내세요.</h2>
         </div>
 
     </form>
+
+    </div>
 
     <!-- Submit the Form to Google Using "AJAX" -->
     <script data-cfasync="false" src="form-submission-handler.js"></script>

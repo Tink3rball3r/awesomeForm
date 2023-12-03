@@ -1,3 +1,23 @@
 .honeypot-field {
 	display: none;
 }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+textarea {
+	display: block;
+}
+
+/* .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} */
+
+form {
+	padding: 2rem;
+}
