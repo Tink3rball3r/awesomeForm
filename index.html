@@ -12,81 +12,82 @@
 <body>
 
 
-
+    <div class="header">
+        <div class="logo"><img src="newLogo.png" alt=""></div>
+        <h1> Awesome English</h1>
+        <h2>Application for admission</h2>
+    </div>
 
 
     <form class="gform" method="POST" data-email="awesomeform1@gmail.com"
         action="https://script.google.com/macros/s/AKfycbwweYBAdpWWuo4jLPQS3TIR63shWBpP9z7sW6XQgiM0w0qPCePOgfIcd4N5UdiK7SzDbw/exec">
         <!-- change the form action to your script url -->
 
-        <div class="container">
-            <div class="logo"><img src="aweLogo.jpeg" alt=""></div>
-            <h1>Awesome English Application for admission</h1>
 
 
-            <label for="admissionDate">입학일</label>
-            <input type="date" name="admission_date" lang="ko">
-            <label for="phone">전화 번호</label>
-            <input type="tel" name="phone_number">
+        <label for="admissionDate">입학일</label>
+        <input type="date" name="admission_date" lang="ko">
+        <label for="phone">전화 번호</label>
+        <input type="tel" name="phone_number">
 
 
 
-            <!-- student Name:     korean       english -->
-            <label for="studentName">학생 이름</label>
-            <input type="text" name="student_name" placeholder="한국 이름">
-            <input type="text" name="english_name" placeholder="영어 이름">
+        <!-- student Name:     korean       english -->
+        <label for="studentName">학생 이름</label>
+        <input class="space" type="text" name="student_name" placeholder="한국 이름">
+        <input type="text" name="english_name" placeholder="영어 이름">
 
 
-            <fieldset class="pure-group">
-                <!-- gender      dob -->
-                <label for="gender">성별</label>
-                <input type="text" name="gender" id="">
-                <label for="DOB">생일</label>
-                <input type="text" name="birth_date" id="">
-            </fieldset>
 
-            <fieldset class="pure-group">
-                <!-- school/grade    english expierecne -->
-                <label for="school_grade">학교/학년</label>
-                <input type="text" name="school_grade" id="">
-                <label for="englishLevel">영어 경험</label>
-                <input type="text" name="english_level" id="">
-            </fieldset>
+        <!-- gender      dob -->
+        <label for="gender">성별</label>
+        <input type="text" name="gender" id="">
+        <label for="DOB">생일</label>
+        <input type="text" name="birth_date" id="">
 
-            <fieldset class="pure-group">
-                <!-- address   email -->
-                <label for="adress">주소</label>
-                <input type="text" name="address" />
-                <label for="email">이메일</label>
-                <input id="email" name="email" type="email" value="" required />
-            </fieldset>
 
-            <fieldset class="pure-group">
-                <!-- parents   gurardian -->
-                <label for="parent">부모의</label>
-                <input type="text" name="parent">
-                <label for="guardian">보호자</label>
-                <input type="text" name="guardian">
-            </fieldset>
 
-            <fieldset class="pure-group">
-                <!-- food allergies   days per week -->
-                <label for="allergies">알레르기:</label>
-                <input type="text" name="allergies">
-                <label for="days">일주일에 며칠인가요?</label>
-                <input type="text" name="days">
-            </fieldset>
+        <!-- school/grade    english expierecne -->
+        <label for="school_grade">학교/학년</label>
+        <input type="text" name="school_grade" id="">
+        <label for="englishLevel">영어 경험</label>
+        <input type="text" name="english_level" id="">
 
-            <fieldset class="pure-group">
-                <label for="schedule">수업 시간표</label>
-                <textarea name="schedule" id="" cols="60" rows="30"></textarea>
-            </fieldset>
+
+
+        <!-- address   email -->
+        <label for="adress">주소</label>
+        <input type="text" name="address" />
+        <label for="email">이메일</label>
+        <input id="email" name="email" type="email" value="" required />
+
+
+
+        <!-- parents   gurardian -->
+        <label for="parent">부모의</label>
+        <input type="text" name="parent">
+        <label for="guardian">보호자</label>
+        <input type="text" name="guardian">
+
+
+
+        <!-- food allergies   days per week -->
+        <label for="allergies">알레르기:</label>
+        <input type="text" name="allergies">
+        <label for="days">일주일에 며칠인가요?</label>
+        <input type="text" name="days">
+
+
+        <fieldset class="pure-group">
+            <label for="schedule">수업 시간표</label>
+            <textarea name="schedule" id="" cols="60" rows="30"></textarea>
+        </fieldset>
 
 
 
 
 
-            <!-- <fieldset class="pure-group">
+        <!-- <fieldset class="pure-group">
             <label for="parent">부모의</label>
             <input type="text" name="parent">
 
@@ -118,17 +119,16 @@
 
 
 
-            <fieldset class="pure-group honeypot-field">
-                <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be
-                    empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
-                <input id="honeypot" type="text" name="honeypot" value="" />
-            </fieldset>
+        <fieldset class="pure-group honeypot-field">
+            <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be
+                empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+            <input id="honeypot" type="text" name="honeypot" value="" />
+        </fieldset>
 
 
-            <!-- some type of icon for the send button -->
-            <button class="button-success pure-button button-xlarge">
-                <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-        </div>
+        <!-- some type of icon for the send button -->
+        <button>보내다</button>
+
 
         <!-- make the message in korean: -->
         <div class="thankyou_message" style="display:none;">
